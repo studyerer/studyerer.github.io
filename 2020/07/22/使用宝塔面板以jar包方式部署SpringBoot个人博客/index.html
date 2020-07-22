@@ -6,15 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Hexo</title>
+  <title>使用宝塔面板以jar包方式部署SpringBoot个人博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="购买阿里云服务器ECS购买ECS服务器时，选择附带宝塔面板的，会默认安装好LAMP（Apache+Mysql+php）， 只需在安装tomcat就好。 在服务器端创建数据库使用宝塔提供的数据库sql语句导入功能创建，或者直接在服务器端使用命令行，  mysql -u root -p  登录Mysql,创建数据库，插入数据。 修改SpringBoot项目的配置文件  数据源的密码保证要和我们服务器端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用宝塔面板以jar包方式部署SpringBoot个人博客">
+<meta property="og:url" content="http://yoursite.com/2020/07/22/%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BB%A5jar%E5%8C%85%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2SpringBoot%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="购买阿里云服务器ECS购买ECS服务器时，选择附带宝塔面板的，会默认安装好LAMP（Apache+Mysql+php）， 只需在安装tomcat就好。 在服务器端创建数据库使用宝塔提供的数据库sql语句导入功能创建，或者直接在服务器端使用命令行，  mysql -u root -p  登录Mysql,创建数据库，插入数据。 修改SpringBoot项目的配置文件  数据源的密码保证要和我们服务器端">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200718180705450.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200718181728473.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200718182457716.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020071818315395.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200718183428770.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="article:published_time" content="2020-07-22T02:29:53.000Z">
+<meta property="article:modified_time" content="2020-07-22T02:31:05.486Z">
 <meta property="article:author" content="Sun">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200718180705450.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -152,114 +162,214 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-使用宝塔面板以jar包方式部署SpringBoot个人博客" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      使用宝塔面板以jar包方式部署SpringBoot个人博客
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/22/%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BB%A5jar%E5%8C%85%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2SpringBoot%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+
+        
+        <a href="/2020/07/22/%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BB%A5jar%E5%8C%85%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2SpringBoot%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
   	<time datetime="2020-07-22T02:29:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/22/%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BB%A5jar%E5%8C%85%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2SpringBoot%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">使用宝塔面板以jar包方式部署SpringBoot个人博客</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="购买阿里云服务器ECS"><a href="#购买阿里云服务器ECS" class="headerlink" title="购买阿里云服务器ECS"></a>购买阿里云服务器ECS</h1><p>购买ECS服务器时，选择附带宝塔面板的，会默认安装好LAMP（Apache+Mysql+php）， 只需在安装tomcat就好。</p>
+<h1 id="在服务器端创建数据库"><a href="#在服务器端创建数据库" class="headerlink" title="在服务器端创建数据库"></a>在服务器端创建数据库</h1><p>使用宝塔提供的数据库sql语句导入功能创建，或者<br>直接在服务器端使用命令行，</p>
+<blockquote>
+<p>mysql -u root -p</p>
+</blockquote>
+<p>登录Mysql,创建数据库，插入数据。</p>
+<h2 id="修改SpringBoot项目的配置文件"><a href="#修改SpringBoot项目的配置文件" class="headerlink" title="修改SpringBoot项目的配置文件"></a>修改SpringBoot项目的配置文件</h2><p><img src="https://img-blog.csdnimg.cn/20200718180705450.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center" alt="数据源的密码保证要和我们服务器端的Mysql的数据库的密码一致；"></p>
+<ol>
+<li>数据源的密码保证要和我们服务器端的Mysql的数据库的密码一致；</li>
+<li>28085是项目的端口号，和服务器Tomcat的端口号（可通过Tomcat的配置修改选项查看）区分开来；</li>
+<li>同时3306是Mysql的端口号；</li>
+<li>因为该项目会以jar包方式部署在服务器端，所以数据源的url设为localhost就好。</li>
+</ol>
+<h1 id="上传jar包和配置文件到服务器同一个目录下"><a href="#上传jar包和配置文件到服务器同一个目录下" class="headerlink" title="上传jar包和配置文件到服务器同一个目录下"></a>上传jar包和配置文件到服务器同一个目录下</h1><ol>
+<li>在pom.xml中，添加</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;packaging&gt;jar&lt;/packaging&gt;</span><br></pre></td></tr></table></figure>
+<p>同时可在build标签里，引入</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;finalName&gt;SunYuBlog&lt;/finalName&gt;</span><br></pre></td></tr></table></figure>
+<p>设置最终打的jar包的名字。</p>
+<ol start="2">
+<li>使用maven的clean package 即可打jar包<br><img src="https://img-blog.csdnimg.cn/20200718181728473.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></li>
+</ol>
+<h1 id="放行相关端口号"><a href="#放行相关端口号" class="headerlink" title="放行相关端口号"></a>放行相关端口号</h1><h2 id="首先需要在阿里云的控制台放行相关端口号"><a href="#首先需要在阿里云的控制台放行相关端口号" class="headerlink" title="首先需要在阿里云的控制台放行相关端口号"></a>首先需要在阿里云的控制台放行相关端口号</h2><p><img src="https://img-blog.csdnimg.cn/20200718182457716.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>28085 是项目的端口号，<br>3306   是Mysql端口号，<br>8888  是宝塔面板端口号<br>443 是HTTPS端口号，<br>80 是http端口号，<br>3389 是windows远程服务端口号，便于windows系统远程连接服务器<br>22 是ssh端口号。</p>
+<blockquote>
+<p>在Windows命令行使用    ssh root @39.99.248.77      即可远程连接服务器</p>
+</blockquote>
+<h2 id="然后在宝塔面板的安全放行相关端口号"><a href="#然后在宝塔面板的安全放行相关端口号" class="headerlink" title="然后在宝塔面板的安全放行相关端口号"></a>然后在宝塔面板的安全放行相关端口号</h2><p><img src="https://img-blog.csdnimg.cn/2020071818315395.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>然后进入我们上传上去的jar包所在的目录，执行</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar SunYuBlog.jar</span><br></pre></td></tr></table></figure>
+<p>命令，即可启动项目<br><img src="https://img-blog.csdnimg.cn/20200718183428770.JPG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VtbWFzdG9uZQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>在浏览器输入</p>
+<blockquote>
+<p><a href="http://39.99.248.77:28085/" target="_blank" rel="noopener">http://39.99.248.77:28085/</a></p>
+</blockquote>
+<p>即可。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://studyerer.github.io/2020/07/22/%E4%BD%BF%E7%94%A8%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E4%BB%A5jar%E5%8C%85%E6%96%B9%E5%BC%8F%E9%83%A8%E7%BD%B2SpringBoot%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/21/About-me/" class="archive-article-date">
-  	<time datetime="2020-07-21T09:41:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/07/21/About-me/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">About me</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/21/About-me/">About me</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#购买阿里云服务器ECS"><span class="toc-number">1.</span> <span class="toc-text">购买阿里云服务器ECS</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在服务器端创建数据库"><span class="toc-number">2.</span> <span class="toc-text">在服务器端创建数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#修改SpringBoot项目的配置文件"><span class="toc-number">2.1.</span> <span class="toc-text">修改SpringBoot项目的配置文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#上传jar包和配置文件到服务器同一个目录下"><span class="toc-number">3.</span> <span class="toc-text">上传jar包和配置文件到服务器同一个目录下</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#放行相关端口号"><span class="toc-number">4.</span> <span class="toc-text">放行相关端口号</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#首先需要在阿里云的控制台放行相关端口号"><span class="toc-number">4.1.</span> <span class="toc-text">首先需要在阿里云的控制台放行相关端口号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#然后在宝塔面板的安全放行相关端口号"><span class="toc-number">4.2.</span> <span class="toc-text">然后在宝塔面板的安全放行相关端口号</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/21/hello-world/" class="archive-article-date">
-  	<time datetime="2020-07-21T08:39:24.145Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/21/hello-world/">First Blog</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -285,8 +395,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
