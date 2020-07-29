@@ -175,22 +175,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="宝塔面板中mysql的日志报错信息如下："><a href="#宝塔面板中mysql的日志报错信息如下：" class="headerlink" title="宝塔面板中mysql的日志报错信息如下："></a>宝塔面板中mysql的日志报错信息如下：</h3><blockquote>
-<p>2020-07-29 18:07:48 10555 [Note] Plugin ‘FEDERATED’ is disabled.<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Using atomics to ref count buffer pool pages<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: The InnoDB memory heap is disabled<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Memory barrier is not used<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Compressed tables use zlib 1.2.11<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Using Linux native AIO<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Using CPU crc32 instructions<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Initializing buffer pool, size = 8.0M<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Completed initialization of buffer pool<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Highest supported file format is Barracuda.<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2094977<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Database was not shutdown normally!<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Starting crash recovery.<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Reading tablespace information from the .ibd files…<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Restoring possible half-written data pages<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: from the doublewrite buffer…</p>
+<p>2020-07-29 18:07:48 10555 [Note] Plugin ‘FEDERATED’ is disabled.<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Using atomics to ref count buffer pool pages<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: The InnoDB memory heap is disabled<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins<br> 2020-07-29 18:07:48 10555 [Note] InnoDB: Memory barrier is not used</p>
 </blockquote>
-<p>原因是内存不够用了，导致mysql 崩溃  </p>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>修改mysql配置文件</p>
-<blockquote>
-<p>vi /etc/my.cnf  </p>
-</blockquote>
-<p>修改如下代码：</p>
-<blockquote>
-<p>[inonodb]<br>innodb_buffer_pool_size=8MB  </p>
-</blockquote>
-<p>把内存改小就好了。<br>重启MySQL服务</p>
-<blockquote>
-<p>service mysqld restart</p>
-</blockquote>
-
+        
+          <a class="article-more-a" href="/2020/07/29/%E9%98%BF%E9%87%8C%E4%BA%91mysql%E6%97%A0%E7%BC%98%E6%97%A0%E6%95%85%E6%8C%82%E6%8E%89%E4%B9%8B%E5%86%85%E5%AD%98%E4%B8%8D%E5%A4%9F/#more">more >></a>
+        
       
 
       
@@ -273,29 +262,9 @@
 <blockquote>
 <p>可显示占用该端口号的进程的PID</p>
 </blockquote>
-</li>
-<li><p>kill -9 PID</p>
-<blockquote>
-<p>杀死该PID对应的进程</p>
-</blockquote>
-</li>
-<li><p>nohup java -jar 项目名.jar &amp;</p>
-<blockquote>
-<p>后台一直运行该jar包</p>
-</blockquote>
-</li>
-<li><p>nohup java -jar SunYuBlog.jar –server.port=28085 SunYuBlog.jar &gt; /dev/null 2&gt;&amp;1</p>
-<blockquote>
-<p>该命令可以解决使用nohup命令报如下错误<br>nohup: ignoring input and appending output to ‘nohup.out’</p>
-</blockquote>
-</li>
-<li><p>vi 文件名</p>
-<blockquote>
-<p>进入某文件，按i进入编辑模式，编辑完后，按esc 再按 :wq 退出并保存<br>同时 vim 有三种模式:命令模式、插入模式、退出模式</p>
-</blockquote>
-</li>
-</ol>
-
+        
+          <a class="article-more-a" href="/2020/07/29/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more">more >></a>
+        
       
 
       
@@ -916,19 +885,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">部署</a>
+                <a href="javascript:void(0)" class="js-tag color1">SpringBoot</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">git技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">部署</a>
               </li>
             
             <div class="clearfix"></div>
